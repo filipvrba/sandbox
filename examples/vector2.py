@@ -27,14 +27,17 @@ class Vector2:
 
 
 def main():
-    test = Vector2(1, 1)
-    test_2 = Vector2()
+    def scenario():
+        test = Vector2(1, 1)
+        test_2 = Vector2()
 
-    print(test_2)
-    test_2 += test
-    print(test_2)
-    test_2 -= test
-    print(test_2)
+        print(test_2)
+        test_2 += test
+        print(test_2)
+        test_2 -= test
+        print(test_2)
+    
+    scenario()
 
 
 if __name__ == "__main__":
