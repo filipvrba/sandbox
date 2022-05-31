@@ -26,6 +26,10 @@ class Vector2:
         return f"{self.__name__()}( x: {self.x}, y: {self.y} )"
 
 
+    def __len__( self ):
+        return self.x + self.y
+
+
 def main():
     def scenario():
         test = Vector2(1, 1)
@@ -33,7 +37,7 @@ def main():
 
         print(test_2)
         test_2 += test
-        print(test_2)
+        print(test_2, len(test_2))
         test_2 -= test
         print(test_2)
     
